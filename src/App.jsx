@@ -9,7 +9,9 @@ import DiscountForm from "./components/DiscountForm";
 import StickyDiscountBar from "./components/StickyDiscountBar";
 import PaymentOptionsPage from './components/PaymentOptionsPage';
 import CheckoutSuccessPage from "./components/CheckoutSuccessPage";
-import SprintDashboard from "./components/CodeLab";
+import SprintDashboard from "./components/SprintDashboard";
+import AuthPage from './pages/AuthPage';
+import ProtectedRoute from './components/ProtectedRoute';
 
 import CodeLab from "./components/CodeLab"; // ✅ add at the top
 
@@ -63,6 +65,9 @@ function App() {
         <Route path="/payment-options" element={<PaymentOptionsPage />} />
         <Route path="/checkout-success" element={<CheckoutSuccessPage />} />
         <Route path="/dashboard" element={<SprintDashboard />} />
+        <Route path="/auth" element={<AuthPage />} />
+        
+
       </Routes>
     </div>
   );
